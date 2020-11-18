@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FeedDetailActivity">
+
+    <ImageView
+        android:id="@+id/imgFeedDetailCover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/default_feed_image"
+        android:padding="@dimen/_5sdp" />
+
+    <TextView
+        android:id="@+id/txtFeedDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:text="Dolor Sit Amet"
+        android:textColor="@color/colorPureBlack"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:maxLines="4" />
+
+    <TextView
+        android:id="@+id/txtFeedDetailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textSize="@dimen/_10ssp"
+        android:text="Dolor Sit Amet"
+        android:textColor="@color/colorPureBlack"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+</LinearLayout>

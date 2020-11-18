@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Onedio Challenge</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="service_started">Getting data from Onedio servers</string>
+    <string name="horizontal_card">Horizontal Card</string>
+    <string name="vertical_card">Vertical Card</string>
+    <string name="grid">Grid</string>
+    <string name="slider">Slider</string>
+</resources>
