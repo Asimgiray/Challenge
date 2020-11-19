@@ -6,4 +6,5 @@
     <color name="colorCardTextBackground">#3a444d</color>
     <color name="colorPureWhite">#fff</color>
     <color name="colorPureBlack">#000</color>
+    <color name="colorRestartText">#FF02CF98</color>
 </resources>

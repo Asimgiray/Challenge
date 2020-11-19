@@ -6,4 +6,6 @@
     <string name="vertical_card">Vertical Card</string>
     <string name="grid">Grid</string>
     <string name="slider">Slider</string>
+    <string name="error_message">We are really sorry an error occured and our team working on it</string>
+    <string name="restart_app">Restart App</string>
 </resources>

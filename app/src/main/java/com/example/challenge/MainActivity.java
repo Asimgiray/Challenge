@@ -18,6 +18,7 @@ import com.example.challenge.Adapters.VerticalCardAdapter;
 import com.example.challenge.DataModels.Feed;
 import com.example.challenge.DataModels.SinglePost;
 import com.example.challenge.Presenters.MainActivityPresenter;
+import com.example.challenge.Utils.CrashExceptionHandler;
 import com.example.challenge.Utils.RetrofitClient;
 
 import java.util.ArrayList;
@@ -59,10 +60,13 @@ public class MainActivity extends AppCompatActivity implements MainActivityPrese
         mainCtx = this;
         presenter = new MainActivityPresenter(this);
 
+        Thread.setDefaultUncaughtExceptionHandler(new CrashExceptionHandler(mainCtx));
+
         linWidgets = findViewById(R.id.linWidgets);
         rvHorizontalCard = findViewById(R.id.rvHorizontalCard);
         rvVerticalCard = findViewById(R.id.rvVerticalCard);
         rvGridCard = findViewById(R.id.rvGridCard);
+
 
         RetrofitClient.getAPI().getFeed()
                 .observeOn(AndroidSchedulers.mainThread())
